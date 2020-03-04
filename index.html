@@ -11,6 +11,12 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<script language=”JavaScript”>
+		var frmvalidator = new Validator("contactform");
+		frmvalidator.addValidation("name", "req", "Please provide your name");
+		frmvalidator.addValidation("email", "req", "Please provide your email");
+		frmvalidator.addValidation("email", "email", "Please enter a valid email address"); 
+	</script>
 </head>
 
 <body class="is-preload">
@@ -62,11 +68,8 @@
 			<div class="container">
 
 				<header>
-					<h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a>
-						responsive<br />
-						site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
-					<p>Ligula scelerisque justo sem accumsan diam quis<br />
-						vitae natoque dictum sollicitudin elementum.</p>
+					<h2 class="alt"><strong>Welcome to Sam Allen's Portfolio</strong></h2>
+					<p>I'm proud to showcase a few of my most recent projects here.</p>
 				</header>
 
 				<footer>
@@ -84,23 +87,22 @@
 					<h2>Portfolio</h2>
 				</header>
 
-				<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-					egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-					Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-					fusce hendrerit lacus ridiculus.</p>
+				<p>I'm a junior developer specializing in React/Redux for front end and Node/Express for back
+					end. For tests, I like using Jest and I'm continuing to learn more about other testing techniques.
+				</p>
 
 				<div class="row">
 					<div class="col-4 col-12-mobile">
 						<article class="item">
 							<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 							<header>
-								<h3>Ipsum Feugiat</h3>
+								<h3>African Marketplace</h3>
 							</header>
 						</article>
 						<article class="item">
 							<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
 							<header>
-								<h3>Rhoncus Semper</h3>
+								<h3>Use My Tools</h3>
 							</header>
 						</article>
 					</div>
@@ -108,7 +110,7 @@
 						<article class="item">
 							<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
 							<header>
-								<h3>Magna Nullam</h3>
+								<h3>Trivia Site</h3>
 							</header>
 						</article>
 						<article class="item">
@@ -147,12 +149,17 @@
 
 				<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
 
-				<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-					ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-					laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-					parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-					dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-					ornare iaculis.</p>
+				<p>Outside of my recent coding activities, I have many other experiences related to manufacturing,
+					construction, logistics, and the military. I've led many projects, workshops, and initiatives and I
+					enjoy facilitating, leading, and training others. Some of my strengths include strategic thinking,
+					planning, risk management, work process analysis and improvement, organization, and administration.
+					<br />
+					Some fun hobbies include sailing, woodworking, hiking, and playing the piano.
+				</p>
+
+				<footer>
+					<a href="images/SamAllenResume.pdf" class="button scrolly">Resumé</a>
+				</footer>
 
 			</div>
 		</section>
@@ -165,12 +172,9 @@
 					<h2>Contact</h2>
 				</header>
 
-				<p>Elementum sem parturient nulla quam placerat viverra
-					mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-					donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-					orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+				<p>Feel free to reach out and say hi! <br />I'm happy to answer any questions.</p>
 
-				<form method="post" action="#">
+				<form method="post" name="contact_form" action="contact-form-handler.php">
 					<div class="row">
 						<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
 						<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>

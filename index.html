@@ -1,216 +1,60 @@
 <!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<html lang="en">
 
 <head>
 	<title>Sam Allen | Portfolio</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<script language=”JavaScript”>
-		var frmvalidator = new Validator("contactform");
-		frmvalidator.addValidation("name", "req", "Please provide your name");
-		frmvalidator.addValidation("email", "req", "Please provide your email");
-		frmvalidator.addValidation("email", "email", "Please enter a valid email address"); 
-	</script>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="https://kit.fontawesome.com/d0c5462f1d.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="is-preload">
-
+<body>
 	<!-- Header -->
-	<div id="header">
-
-		<div class="top">
-
-			<!-- Logo -->
-			<div id="logo">
-				<span class="image avatar48"><img src="images/profile_pic.jpg" alt="" /></span>
-				<h1 id="title">Sam Allen</h1>
-				<p>Full Stack Web Developer</p>
-			</div>
-
-			<!-- Nav -->
-			<nav id="nav">
-				<ul>
-					<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-					<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a>
-					</li>
-					<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-					<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a>
-					</li>
-				</ul>
-			</nav>
-
+	<header>
+		<!-- Name Plate -->
+		<div class="name_plate">
+			<!-- <img src="assets/images/profile_pic.jpg" alt="Sam outside, sunny day with trees" /> -->
+			<h1>Sam Allen</h1>
+			<p>Web Developer | Process Analyst</p>
 		</div>
 
-		<div class="bottom">
-
-			<!-- Social Icons -->
-			<ul class="icons">
-				<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-				<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-				<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-			</ul>
-
+		<!-- Media Links -->
+		<div class="media">
+			<a href="http://www.linkedin.com/in/allensam88/"><i class="fab fa-linkedin"></i></a>
+			<a href="http://github.com/allensam88"><i class="fab fa-github-square"></i></a>
 		</div>
 
-	</div>
+		<!-- Nav -->
+		<nav>
+			<a href="index.html">About</a>
+			<a href="projects.html">Projects</a>
+			<a href="writing.html">Writing</a>
+			<a href="assets/Sam_Allen_Resume.pdf">Resume</a>
+		</nav>
+	</header>
 
-	<!-- Main -->
-	<div id="main">
+	<!-- About Me -->
+	<section>
+		<div>
 
-		<!-- Intro -->
-		<section id="top" class="one dark cover">
-			<div class="container">
+			<h2>About Me</h2>
 
-				<header>
-					<h2 class="alt"><strong>Welcome to Sam Allen's Portfolio</strong></h2>
-					<p>I'm proud to showcase a few of my most recent projects here.</p>
-				</header>
+			<p>Outside of my recent coding activities, I have many other experiences related to manufacturing,
+				construction, logistics, and the military. I've led many projects, workshops, and initiatives and I
+				enjoy facilitating, leading, and training others. Some of my strengths include strategic thinking,
+				planning, risk management, work process analysis and improvement, organization, and administration.
+				<br />
+				Some fun hobbies include sailing, woodworking, hiking, and playing the piano.
+			</p>
 
-				<footer>
-					<a href="#portfolio" class="button scrolly">Portfolio</a>
-				</footer>
-
-			</div>
-		</section>
-
-		<!-- Portfolio -->
-		<section id="portfolio" class="two">
-			<div class="container">
-
-				<header>
-					<h2>Portfolio</h2>
-				</header>
-
-				<p>I'm a junior developer specializing in React/Redux for front end and Node/Express for back
-					end. For tests, I like using Jest and I'm continuing to learn more about other testing techniques.
-				</p>
-
-				<div class="row">
-					<div class="col-4 col-12-mobile">
-						<article class="item">
-							<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-							<header>
-								<h3>African Marketplace</h3>
-							</header>
-						</article>
-						<article class="item">
-							<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-							<header>
-								<h3>Use My Tools</h3>
-							</header>
-						</article>
-					</div>
-					<div class="col-4 col-12-mobile">
-						<article class="item">
-							<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-							<header>
-								<h3>Trivia Site</h3>
-							</header>
-						</article>
-						<article class="item">
-							<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-							<header>
-								<h3>Natoque Vitae</h3>
-							</header>
-						</article>
-					</div>
-					<div class="col-4 col-12-mobile">
-						<article class="item">
-							<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-							<header>
-								<h3>Dolor Penatibus</h3>
-							</header>
-						</article>
-						<article class="item">
-							<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-							<header>
-								<h3>Orci Convallis</h3>
-							</header>
-						</article>
-					</div>
-				</div>
-
-			</div>
-		</section>
-
-		<!-- About Me -->
-		<section id="about" class="three">
-			<div class="container">
-
-				<header>
-					<h2>About Me</h2>
-				</header>
-
-				<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-
-				<p>Outside of my recent coding activities, I have many other experiences related to manufacturing,
-					construction, logistics, and the military. I've led many projects, workshops, and initiatives and I
-					enjoy facilitating, leading, and training others. Some of my strengths include strategic thinking,
-					planning, risk management, work process analysis and improvement, organization, and administration.
-					<br />
-					Some fun hobbies include sailing, woodworking, hiking, and playing the piano.
-				</p>
-
-				<footer>
-					<a href="images/SamAllenResume.pdf" class="button scrolly">Resumé</a>
-				</footer>
-
-			</div>
-		</section>
-
-		<!-- Contact -->
-		<section id="contact" class="four">
-			<div class="container">
-
-				<header>
-					<h2>Contact</h2>
-				</header>
-
-				<p>Feel free to reach out and say hi! <br />I'm happy to answer any questions.</p>
-
-				<form method="post" name="contact_form" action="contact-form-handler.php">
-					<div class="row">
-						<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-						<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-						<div class="col-12">
-							<textarea name="message" placeholder="Message"></textarea>
-						</div>
-						<div class="col-12">
-							<input type="submit" value="Send Message" />
-						</div>
-					</div>
-				</form>
-
-			</div>
-		</section>
-
-	</div>
+		</div>
+	</section>
 
 	<!-- Footer -->
-	<div id="footer">
-
-		<!-- Copyright -->
-		<ul class="copyright">
-			<li>&copy; Untitled. All rights reserved.</li>
-			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-		</ul>
-
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+	<footer>
+		<p>Sam Allen Productions</p>
+	</footer>
 
 </body>
 

@@ -61,7 +61,7 @@ header {
 	flex-direction: column;
 }
 
-header .name-plate{
+.name-plate{
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
@@ -99,14 +99,6 @@ header .name-plate{
 	font-weight: bold;
 }
 
-.icons {
-	margin: 10px;
-}
-
-.icons a:hover {
-	text-decoration: underline;
-  }
-
 nav {
 	display: flex;
 	justify-content: center;
@@ -114,17 +106,21 @@ nav {
 }
 
 nav a {
-	display: flex;
-	font-size: 2rem;
-	margin: 10px;
-	padding: 0 50px;
+	font-size: 1.3rem;
+	margin: 10px 30px;
+	padding: 5px 20px;
+	text-decoration: none;
   	color: #E4E4E9;
-  	text-decoration: none;
+	border: 1px solid #000066;
+	background-color: #000066;
 }
 
 nav a:hover {
-	text-decoration: underline;
-	color: gray; 
+	transform: scale(1.2);
+	color: #000066;
+	border: 1px solid #313030;
+	border-radius: 5px;
+	background-color: #E4E4E9;
 }
 
 footer {
@@ -136,14 +132,19 @@ footer {
 	width: 100%;
 }
 
-.fa-linkedin {
+.fab {
 	font-size: 3rem;
-	color: #0E76A8;
 	margin: 20px;
 }
 
+.fa-linkedin {
+	color: #0E76A8;
+}
+
 .fa-github-square {
-	font-size: 3rem;
 	color: #313030;
-	margin: 20px;
+}
+
+.fab:hover {
+	transform: scale(1.1);
 }

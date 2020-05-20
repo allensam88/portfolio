@@ -1,0 +1,25 @@
+.about {
+	display: flex;
+	width: 90%;
+	margin: auto;
+	text-align: justify;
+}
+
+.bio {
+	width: 50%;
+	margin: 30px;
+}
+
+.lists {
+	display: flex;
+	width: 50%;
+	margin: 30px;
+}
+
+.interests {
+	width: 50%;
+}
+
+.hobbies {
+	width: 50%;
+}

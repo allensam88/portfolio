@@ -143,7 +143,7 @@ h3 {
 }
 
 img {
-	width: 330px;
+	height: 180px;
 	object-fit: contain;
 	padding: 1px;
 	margin-top: 10px;
@@ -153,3 +153,15 @@ img {
 img:hover {
 	transform: scale(1.1);
 }
+
+@media(max-width: 800px){
+	.about {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+/* @media(max-width: 500px){
+
+} */

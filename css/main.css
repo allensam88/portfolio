@@ -1,23 +1,96 @@
-.about {
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
 	display: flex;
-	width: 90%;
-	margin: auto;
-	text-align: justify;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.bio {
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Nunito', sans-serif;
+}
+
+a, p, li {
+	font-family: 'Roboto', sans-serif;
+}
+.about {
+	display: flex;
+	margin: 15px 15px 0 15px;
+}
+
+.intro {
 	width: 50%;
-	margin: 30px;
+	margin: 15px;
+	padding: 15px;
+	/* background-color: #E4E4E9;
+	border: 1px solid lightgray;
+	border-radius: 10px; */
+}
+
+h3 {
+	font-size: 1.5rem;
+	margin-bottom: 10px;
 }
 
 .lists {
 	display: flex;
 	width: 50%;
-	margin: 30px;
+	margin: 15px;
+	padding: 15px;
+	/* background-color: #E4E4E9;
+	border: 1px solid lightgray;
+	border-radius: 10px; */
 }
 
 .lists li {
-	margin: 3px;
+	margin: 5px;
 }
 
 .interests {
@@ -31,7 +104,6 @@
 .project-container {
 	display: flex;
 	justify-content: center;
-	margin-top: 20px;
 }
 
 .project {
@@ -42,7 +114,8 @@
 }
 
 .project h3 {
-	margin: 0px;
+	font-size: 1.5rem;
+	margin: 10px;
 	color: black;
 }
 
@@ -56,24 +129,24 @@
 	text-decoration: none;
 	color: black;
 	margin: 0 5px;
-	padding: 0px;
 }
 
 .code p {
 	margin: 0 5px;
-	padding: 0px;
 	color: black;
 }
 
 .code a:hover {
 	transform: scale(1.1);
 	font-style: italic;
+	font-weight: bold;
 }
 
 img {
-	width: 300px;
+	width: 330px;
 	object-fit: contain;
 	padding: 1px;
+	margin-top: 10px;
 	border: 2px solid #313030;
 }
 

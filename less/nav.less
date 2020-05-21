@@ -1,50 +1,58 @@
 header {
 	display: flex;
-	background-color: #E4E4E9;
+	justify-content: space-between;
+	margin: auto;
+	padding: 15px;
+	background-color: @litegray;
+	border-bottom: 2px solid @darkblue;
+
+	.name-bar {
+		display: flex;
+		width: 30%;
+
+		h3 {
+			font-size: 4rem;
+			color: @darkblue;
+		}
+
+		.fab {
+			font-size: 3rem;
+			margin: 10px;
+		}
+
+		.fa-linkedin {
+			color: @linkedinblue;
+		}
+
+		.fa-github-square {
+			color: @gitgray;
+		}
+
+		.fab:hover {
+			transform: scale(1.1);
+		}
+	}
+
+	nav {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 30%;
+
+		a {
+			font-size: 3rem;
+			text-decoration: none;
+			color: @darkblue;
+		}
+
+		a:hover {
+			transform: scale(1.1);
+		}
+	}
 }
 
-nav {
-	display: flex;
-	justify-content: center;
-	
-}
-
-nav a {
-	font-size: 1.3rem;
-	margin: 10px 30px;
-	padding: 5px 20px;
-	text-decoration: none;
-  	color: #E4E4E9;
-	border: 1px solid #000066;
-	background-color: #000066;
-}
-
-nav a:hover {
-	transform: scale(1.2);
-	color: #000066;
-	border: 1px solid #313030;
-	border-radius: 5px;
-	background-color: #E4E4E9;
-}
-
-.iframe {
-	height: 80%;
-	width: 100%;
-}
-
-.fab {
-	font-size: 2.5rem;
-	margin: 10px 40px;
-}
-
-.fa-linkedin {
-	color: #0E76A8;
-}
-
-.fa-github-square {
-	color: #313030;
-}
-
-.fab:hover {
-	transform: scale(1.1);
-}
+// iframe {
+// 	height: 100%;
+// 	width: 100%;
+// 	border: none;
+// }

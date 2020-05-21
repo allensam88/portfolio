@@ -13,29 +13,33 @@
 
 <body>
 	<header>
-		<h1>Sam Allen</h1>
-		<a href="http://www.linkedin.com/in/allensam88/" target="_blank"><i class="fab fa-linkedin"></i></a>
-		<a href="http://github.com/allensam88" target="_blank"><i class="fab fa-github-square"></i></a>
+		<div class="name-bar">
+			<h3>Sam Allen | </h3>
+			<a href="http://www.linkedin.com/in/allensam88/" target="_blank"><i class="fab fa-linkedin"></i></a>
+			<a href="http://github.com/allensam88" target="_blank"><i class="fab fa-github-square"></i></a>
+		</div>
 		<nav>
-			<a href="pages/about.html" target="iframe">About</a>
-			<a href="pages/projects.html" target="iframe">Projects</a>
-			<!-- <a href="writing.html" target="iframe">Writing</a> -->
+			<a href="/pages/about.html" target="frame">About</a>
+			<a href="/pages/projects.html" target="frame">Projects</a>
+			<!-- <a href="writing.html" target="frame">Writing</a> -->
 			<a href="assets/Sam_Allen_Resume.pdf" target="_blank">Resumé</a>
 		</nav>
 	</header>
 
-	<div class="name-plate">
-		<img class="gears-img" src="../assets/images/gear_icon.jpg" alt="fun gear icon" />
+	<iframe src="/pages/about.html" name="frame"></iframe>
+
+	<!-- <section id="about">
 		<div class="title">
-			<h1>Sam Allen</h1>
-			<h3>Web Developer | Process Analyst</h3>
-			<p>Based in the Pacific Northwest</p>
+			<div class="title-box">
+				<img class="profile-img" src="../assets/images/profile_pic.jpg"
+					alt="Sam outside, sunny day with trees" />
+				<h3>Web Developer</h3>
+				<p>Based in the Pacific Northwest</p>
+			</div>
 		</div>
-		<img class="profile-img" src="../assets/images/profile_pic.jpg" alt="Sam outside, sunny day with trees" />
-	</div>
-	<div class="about">
+
 		<div class="intro">
-			<h3>Intro</h3>
+			<h3>Brief Intro</h3>
 			<p>I enjoy problem-solving, process-improvement, and learning new ideas & skills.</p>
 			</br>
 			<p>I've served in the military, played piano in a band, worked hard in construction, and led
@@ -43,27 +47,32 @@
 			</br>
 			<p>I'm passionate about travel and experiencing different cultures.</p>
 		</div>
+
 		<div class="lists">
-			<div class="interests">
-				<h3>Topics of Interest</h3>
-				<li>web tech</li>
-				<li>clean energy tech</li>
-				<li>classical music</li>
-				<li>history / geography</li>
-				<li>economics / philosophy</li>
-			</div>
-			<div class="hobbies">
-				<h3>Hobbies</h3>
-				<li>sailing / hiking / outdoors</li>
-				<li>woodworking / remodeling</li>
-				<li>playing the piano</li>
-				<li>documentaries / comedies</li>
-				<li>board games / puzzles</li>
+			<div class="list-box">
+				<div class="list">
+					<h3>Topics of Interest</h3>
+					<li>web tech</li>
+					<li>clean energy tech</li>
+					<li>classical music</li>
+					<li>history / geography</li>
+					<li>economics / philosophy</li>
+				</div>
+				<div class="list">
+					<h3>Hobbies</h3>
+					<li>sailing / hiking / outdoors</li>
+					<li>woodworking / remodeling</li>
+					<li>playing the piano</li>
+					<li>documentaries / comedies</li>
+					<li>board games / puzzles</li>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="project-container">
+		<img class="gears-img" src="../assets/images/gear_icon.jpg" alt="fun gear icon" />
+	</section> -->
+
+	<!-- <section id=" projects">
 		<div class="project">
 			<h3>Alpaca Vids!</h3>
 			<p>Record practice interviews and get feedback.</p></br>
@@ -103,7 +112,7 @@
 				<a href="http://github.com/allensam88/african-marketplace-server">Back-End</a>
 			</div>
 		</div>
-	</div>
+	</section> -->
 
 </body>
 

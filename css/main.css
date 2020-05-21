@@ -16,10 +16,67 @@
 	margin: 30px;
 }
 
+.lists li {
+	margin: 3px;
+}
+
 .interests {
 	width: 50%;
 }
 
 .hobbies {
 	width: 50%;
+}
+
+.project-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.project {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+}
+
+.project h3 {
+	margin: 0px;
+	color: black;
+}
+
+.code {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 10px;
+}
+
+.code a {
+	text-decoration: none;
+	color: black;
+	margin: 0 5px;
+	padding: 0px;
+}
+
+.code p {
+	margin: 0 5px;
+	padding: 0px;
+	color: black;
+}
+
+.code a:hover {
+	transform: scale(1.1);
+	font-style: italic;
+}
+
+img {
+	width: 300px;
+	object-fit: contain;
+	padding: 1px;
+	border: 2px solid #313030;
+}
+
+img:hover {
+	transform: scale(1.1);
 }

@@ -8,7 +8,7 @@ header {
 
 	.name-bar {
 		display: flex;
-		width: 30%;
+		align-content: center;
 
 		h3 {
 			font-size: 4rem;
@@ -37,22 +37,42 @@ header {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		width: 30%;
 
 		a {
 			font-size: 3rem;
+			margin: 0 10px;
 			text-decoration: none;
 			color: @darkblue;
 		}
 
 		a:hover {
 			transform: scale(1.1);
+			border-bottom: 2px solid @darkblue;
 		}
 	}
 }
 
-// iframe {
-// 	height: 100%;
-// 	width: 100%;
-// 	border: none;
-// }
+@media @tablet {
+	header {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+
+		.name-bar {
+			justify-content: center;
+		}
+
+		nav {
+			background-color: @darkblue;
+			padding: 15px;
+
+			a {
+				color: @litegray;
+			}
+
+			a:hover {
+				border-bottom: none;
+			}
+		}
+	}	
+}

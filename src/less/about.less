@@ -1,0 +1,90 @@
+#about {
+	display: flex;
+	justify-content: space-between;
+	padding: 50px;
+	background-color: @litegray;
+
+	h3 {
+		font-size: 2rem;
+		color: @darkblue;
+		font-weight: bold;
+		padding: 10px 0;
+	}
+
+	p, li {
+		font-size: 1.5rem;
+	}
+
+	.profile {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		border-right: 2px solid @darkblue;
+		
+		.title {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 10px;
+
+			.profile-img {
+				width: 180px;
+				object-fit: cover;
+				padding: 1px;
+				border: 2px solid @gitgray;
+				border-radius: 50%;
+			}
+		}
+
+		.intro {
+			margin: 0 20%;
+
+			p {
+				padding: 5px 0;
+			}
+		}
+	}
+	
+	.lists {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.list {
+			display: flex;
+			flex-direction: column;
+
+			li {
+				margin: 2px;
+			}
+		}
+
+		.gears-img {
+			width: 150px;
+			margin: 10px;
+			object-fit: cover;
+		}
+	}
+}
+
+@media @mobile {
+	#about {
+		display: flex;
+		flex-direction: column;
+
+		.profile {
+			width: 100%;
+			border-right: none;
+		}
+
+		.lists {
+			display: flex;
+			justify-content: left;
+		}
+	}
+	
+	.gears-img {
+		display: none;
+	}
+}

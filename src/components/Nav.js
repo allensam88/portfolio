@@ -1,21 +1,42 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styled from 'styled-components';
 
-function Nav() {
+const Container = styled.nav`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+`;
+
+const StyledLink = styled(Link)`
+	font-size: 2rem;
+	color: #E4E4E9;
+	padding: 10px 0;
+	text-decoration: none;
+
+	&:hover {
+		border-bottom: 2px solid #E4E4E9;
+	}
+`;
+
+const Anchor = styled.a`
+	font-size: 2rem;
+	color: #E4E4E9;
+	padding: 10px 0;
+	text-decoration: none;
+
+	&:hover {
+		border-bottom: 2px solid #E4E4E9;
+	}
+`;
+
+const Nav = () => {
 	return (
-		<header>
-			<div className="name-bar">
-				<h3>Sam Allen | </h3>
-				<a href="http://www.linkedin.com/in/allensam88/" target="_blank"><i class="fab fa-linkedin"></i></a>
-				<a href="http://github.com/allensam88" target="_blank"><i class="fab fa-github-square"></i></a>
-			</div>
-			<nav>
-				<Link to="/">About</Link>
-				<Link to="/projects">Projects</Link>
-				<a href="../assets/Sam_Allen_Resume.pdf" target="_blank">Resumé</a>
-			</nav>
-
-		</header>
+		<Container>
+			<StyledLink to="/">About</StyledLink>
+			<StyledLink to="/projects">Projects</StyledLink>
+			<Anchor href="../assets/Sam_Allen_Resume.pdf" target="_blank">Resumé</Anchor>
+		</Container>
 	)
 }
 

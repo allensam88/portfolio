@@ -1,31 +1,83 @@
 import React from "react";
 import styled from 'styled-components';
 
-const Container = styled.div`
+const Container = styled.body`
 	display: grid;
+	grid-template-rows: [top] 48% [center] 4% [bottom] 48%;
 	grid-template-columns: [left] 33% [center] 34% [right] 33%;
-	border-bottom: 2px solid black;
-	padding: 50px 0;
-	padding-left: 20px;
+	margin-top: 70px;
+	margin-left: 25vw;
+	height: 90vh;
+
+	@media (max-width: 800px) {
+		display: flex;
+		flex-direction: column;
+		align-content: stretch;
+		margin: 125px 20px;
+	}
 `;
 
 const Section1 = styled.div`
+	grid-row: top;
 	grid-column: left / span 2;
-	justify-self: left;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	padding-right: 30px;
+`;
+
+const Section2 = styled.div`
+	grid-row: top;
+	grid-column: right;
+	align-self: center;
 	display: flex;
 	flex-direction: column;
 `;
 
-const Section2 = styled.div`
-	grid-column: right;
-	justify-self: left;
+const Section3 = styled.div`
+	grid-row: bottom;
+	grid-column: left;
+	align-self: center;
 	display: flex;
 	flex-direction: column;
+`;
+
+const Section4 = styled.div`
+	grid-row: bottom;
+	grid-column: right;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+`;
+
+const Gear = styled.img`
+	grid-row: bottom;
+	grid-column: center;
+	align-self: center;
+	width: 150px;
+	margin: 10px;
+	object-fit: contain;
+
+	@media (max-width: 800px) {
+		display: none;
+	}
+`;
+
+const Divider = styled.div`
+	grid-row: center;
+	grid-column: left / span 3;
+	align-self: center;	
+	border-bottom: 2px solid #152238;
+	width: 90%;
+
+	// @media (max-width: 800px) {
+	// 	margin: 125px 20px;
+	// }
 `;
 
 const Header = styled.h3`
 	font-size: 2rem;
-	color: @darkblue;
+	color: #152238;
 	font-weight: bold;
 	padding: 10px 0;
 `;
@@ -56,11 +108,29 @@ function Intro() {
 				<Item>React / Redux</Item>
 				<Item>Node / Express</Item>
 				<Item>Jest Testing</Item>
+				<Item>ArcGIS</Item>
 				<Item>Process Improvement</Item>
 				<Item>Strategic Planning</Item>
-				<Item>Geographic Information Systems</Item>
 				<Item>Training Implementation</Item>
 			</Section2>
+			<Divider />
+			<Section3>
+				<Header>Topics of Interest</Header>
+				<Item>web tech</Item>
+				<Item>clean energy tech</Item>
+				<Item>classical music</Item>
+				<Item>history / geography</Item>
+				<Item>economics / philosophy</Item>
+			</Section3>
+			<Gear src="assets/images/gear_icon.jpg" alt="fun gear icon" />
+			<Section4>
+				<Header>Hobbies</Header>
+				<Item>playing the piano</Item>
+				<Item>sailing / hiking</Item>
+				<Item>remodeling</Item>
+				<Item>documentaries</Item>
+				<Item>games / puzzles</Item>
+			</Section4>
 		</Container>
 	)
 }

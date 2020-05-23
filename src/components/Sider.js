@@ -8,10 +8,22 @@ const Container = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;	
-	width: 25vw;
-	height: 100vh;
 	border-right: 4px solid #152238;
 	background: #23395D;
+	position: fixed;
+	z-index: 2;
+	width: 20vw;
+	height: 100vh;
+	left: 0;
+	top: 0;
+
+	@media (max-width: 800px) {
+		display: grid;
+		grid-template-rows: 70% 30%;
+		width: 100vw;
+		height: 20vh;
+		border-right: none;
+	}
 `;
 
 const Sider = () => {

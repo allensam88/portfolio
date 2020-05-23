@@ -5,6 +5,8 @@ const Projects = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin-top: 10%;
+	margin-left: 30vw;
 `;
 
 const Project = styled.div`
@@ -70,9 +72,9 @@ function ProjectList() {
 					<Image src="../assets/images/alpaca-vids.jpg" alt="screenshot of Alpaca Vids App" /></a>
 				<Code>
 					<Text>Code: </Text>
-					<Anchor href="http://github.com/AlpacaVids/video-journal-for-teams-fe">Front-End</Anchor>
+					<Anchor href="http://github.com/AlpacaVids/video-journal-for-teams-fe" target="_blank">Front-End</Anchor>
 					<Text>|</Text>
-					<Anchor href="http://github.com/AlpacaVids/video-journal-for-teams-be">Back-End</Anchor>
+					<Anchor href="http://github.com/AlpacaVids/video-journal-for-teams-be" target="_blank">Back-End</Anchor>
 				</Code>
 			</Project>
 			<Project>
@@ -83,9 +85,9 @@ function ProjectList() {
 					<Image src="../assets/images/use-my-tools.jpg" alt="screenshot of Use-My-Tools App" /></a>
 				<Code>
 					<Text>Code: </Text>
-					<Anchor href="http://github.com/allensam88/use-my-tools">Front-End</Anchor>
+					<Anchor href="http://github.com/allensam88/use-my-tools" target="_blank">Front-End</Anchor>
 					<Text>|</Text>
-					<Anchor href="http://github.com/allensam88/use-my-tools-server">Back-End</Anchor>
+					<Anchor href="http://github.com/allensam88/use-my-tools-server" target="_blank">Back-End</Anchor>
 				</Code>
 			</Project>
 			<Project>
@@ -96,9 +98,9 @@ function ProjectList() {
 					<Image src="../assets/images/african-marketplace.jpg" alt="screenshot of African Marketplace App" /></a>
 				<Code>
 					<Text>Code: </Text>
-					<Anchor href="http://github.com/allensam88/african-marketplace">Front-End</Anchor>
+					<Anchor href="http://github.com/allensam88/african-marketplace" target="_blank">Front-End</Anchor>
 					<Text>|</Text>
-					<Anchor href="http://github.com/allensam88/african-marketplace-server">Back-End</Anchor>
+					<Anchor href="http://github.com/allensam88/african-marketplace-server" target="_blank">Back-End</Anchor>
 				</Code>
 			</Project>
 		</Projects>

@@ -1,11 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from 'styled-components';
 
 const Container = styled.div`
 	display: flex;
-	position: absolute;
+	justify-content: center;
+	position: fixed;
 	bottom: 0;
+
+	@media (max-width: 800px) {
+		
+		z-index: 1;
+		background: #23395D;
+		width: 100%;
+	}
 `;
 
 const Social = () => {

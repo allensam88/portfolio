@@ -4,9 +4,10 @@ import styled from 'styled-components';
 const Projects = styled.div`
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	margin-top: 10%;
-	margin-left: 30vw;
+	justify-content: flex-start;
+	position: fixed;
+	top: 72px;
+	left: 20vw;
 `;
 
 const Project = styled.div`

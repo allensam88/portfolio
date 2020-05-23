@@ -5,9 +5,12 @@ const Container = styled.body`
 	display: grid;
 	grid-template-rows: [top] 48% [center] 4% [bottom] 48%;
 	grid-template-columns: [left] 33% [center] 34% [right] 33%;
-	margin-top: 70px;
-	margin-left: 25vw;
-	height: 90vh;
+	position: fixed;
+	top: 72px;
+	left: 20vw;
+	height: 90%;
+	width: 9z0%;
+	// margin: 10px;
 
 	@media (max-width: 800px) {
 		display: flex;
@@ -20,7 +23,7 @@ const Container = styled.body`
 const Section1 = styled.div`
 	grid-row: top;
 	grid-column: left / span 2;
-	align-self: center;
+	place-self: center;
 	display: flex;
 	flex-direction: column;
 	padding-right: 30px;
@@ -29,7 +32,7 @@ const Section1 = styled.div`
 const Section2 = styled.div`
 	grid-row: top;
 	grid-column: right;
-	align-self: center;
+	place-self: center;
 	display: flex;
 	flex-direction: column;
 `;
@@ -37,7 +40,7 @@ const Section2 = styled.div`
 const Section3 = styled.div`
 	grid-row: bottom;
 	grid-column: left;
-	align-self: center;
+	place-self: center;
 	display: flex;
 	flex-direction: column;
 `;
@@ -45,7 +48,7 @@ const Section3 = styled.div`
 const Section4 = styled.div`
 	grid-row: bottom;
 	grid-column: right;
-	align-self: center;
+	place-self: center;
 	display: flex;
 	flex-direction: column;
 `;
@@ -53,7 +56,7 @@ const Section4 = styled.div`
 const Gear = styled.img`
 	grid-row: bottom;
 	grid-column: center;
-	align-self: center;
+	place-self: center;
 	width: 150px;
 	margin: 10px;
 	object-fit: contain;
@@ -66,7 +69,7 @@ const Gear = styled.img`
 const Divider = styled.div`
 	grid-row: center;
 	grid-column: left / span 3;
-	align-self: center;	
+	place-self: center;	
 	border-bottom: 2px solid #152238;
 	width: 90%;
 

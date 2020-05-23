@@ -4,33 +4,38 @@ import styled from 'styled-components';
 const Projects = styled.div`
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-start;
-	position: fixed;
-	top: 72px;
-	left: 20vw;
+	justify-content: center;
+
+	@media (max-width: 800px) {
+		margin-bottom: 60px;
+	}
 `;
 
 const Project = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 300px;
+	width: 250px;
 	margin: 20px;
 	padding: 10px;
-	border: 2px solid #152238;
+	border: 3px solid #152238;
 	border-radius: 10px;
 	background: #23395D;
+	box-shadow: 10px 10px 10px #222222;
 `;
 
 const Header = styled.h3`
-	font-size: 3rem;
+	font-size: 20px;	
 	color: #E4E4E9;
+	margin: 0;
 `;
 
 const Text = styled.p`
-	font-size: 1.3rem;
+	font-size: 11pt;
 	color: #E4E4E9;
-	padding: 5px;
+	text-align: center;
+	margin: 0;
+	padding: 3px;
 `;
 
 const Image = styled.img`
@@ -51,10 +56,10 @@ const Code = styled.div`
 `;
 
 const Anchor = styled.a`
-	font-size: 1.3rem;
+	// font-size: 1.3rem;
 	text-decoration: none;
 	color: #E4E4E9;
-	padding: 5px;
+	padding: 3px;
 
 	&:hover {
 		font-style: italic;
@@ -67,41 +72,44 @@ function ProjectList() {
 		<Projects>
 			<Project>
 				<Header>Alpaca Vids!</Header>
-				<Text>Record practice interviews and get feedback.</Text>
-				<Text>Demo login: Sam | password: 1234</Text>
-				<a href="" target="_blank">
+				<Text>For practice interviews & feedback.</Text>
+				<Text>demo login: fwilloughley0</Text>
+				<Text>password: 4OTUUVDkYT</Text>
+				<a href="http://alpacavids.netlify.app/" target="_blank" rel="noopener noreferrer">
 					<Image src="../assets/images/alpaca-vids.jpg" alt="screenshot of Alpaca Vids App" /></a>
 				<Code>
 					<Text>Code: </Text>
-					<Anchor href="http://github.com/AlpacaVids/video-journal-for-teams-fe" target="_blank">Front-End</Anchor>
+					<Anchor href="http://github.com/AlpacaVids/video-journal-for-teams-fe" target="_blank" rel="noopener noreferrer">Front-End</Anchor>
 					<Text>|</Text>
-					<Anchor href="http://github.com/AlpacaVids/video-journal-for-teams-be" target="_blank">Back-End</Anchor>
+					<Anchor href="http://github.com/AlpacaVids/video-journal-for-teams-be" target="_blank" rel="noopener noreferrer">Back-End</Anchor>
 				</Code>
 			</Project>
 			<Project>
 				<Header>Use My Tools</Header>
-				<Text>Exchange tools with other members.</Text>
-				<Text>Demo login: Sam | password: 1234</Text>
-				<a href="https://use-my-tools-sam.netlify.app/" target="_blank">
+				<Text>Exchange tools with members.</Text>
+				<Text>demo login: Sam</Text>
+				<Text>password: 1234</Text>
+				<a href="https://use-my-tools-sam.netlify.app/" target="_blank" rel="noopener noreferrer">
 					<Image src="../assets/images/use-my-tools.jpg" alt="screenshot of Use-My-Tools App" /></a>
 				<Code>
 					<Text>Code: </Text>
-					<Anchor href="http://github.com/allensam88/use-my-tools" target="_blank">Front-End</Anchor>
+					<Anchor href="http://github.com/allensam88/use-my-tools" target="_blank" rel="noopener noreferrer">Front-End</Anchor>
 					<Text>|</Text>
-					<Anchor href="http://github.com/allensam88/use-my-tools-server" target="_blank">Back-End</Anchor>
+					<Anchor href="http://github.com/allensam88/use-my-tools-server" target="_blank" rel="noopener noreferrer">Back-End</Anchor>
 				</Code>
 			</Project>
 			<Project>
 				<Header>African Marketplace</Header>
 				<Text>An eCommerce demo site.</Text>
-				<Text>Demo login: Sam | password: 1234</Text>
-				<a href="http://african-marketplace-app.netlify.app/" target="_blank">
+				<Text>demo login: Sam</Text>
+				<Text>password: 1234</Text>
+				<a href="http://african-marketplace-app.netlify.app/" target="_blank" rel="noopener noreferrer">
 					<Image src="../assets/images/african-marketplace.jpg" alt="screenshot of African Marketplace App" /></a>
 				<Code>
 					<Text>Code: </Text>
-					<Anchor href="http://github.com/allensam88/african-marketplace" target="_blank">Front-End</Anchor>
+					<Anchor href="http://github.com/allensam88/african-marketplace" target="_blank" rel="noopener noreferrer">Front-End</Anchor>
 					<Text>|</Text>
-					<Anchor href="http://github.com/allensam88/african-marketplace-server" target="_blank">Back-End</Anchor>
+					<Anchor href="http://github.com/allensam88/african-marketplace-server" target="_blank" rel="noopener noreferrer">Back-End</Anchor>
 				</Code>
 			</Project>
 		</Projects>

@@ -1,64 +1,67 @@
 import React from "react";
 import styled from 'styled-components';
 
-const Container = styled.body`
+const Container = styled.div`
 	display: grid;
-	grid-template-rows: [top] 48% [center] 4% [bottom] 48%;
-	grid-template-columns: [left] 33% [center] 34% [right] 33%;
-	position: fixed;
-	top: 72px;
-	left: 20vw;
-	height: 90%;
-	width: 9z0%;
-	// margin: 10px;
+	grid-template-rows: [top] 4fr [center] 1fr [bottom] 4fr;
+	grid-template-columns: [left] 1fr [center] 1fr [right] 1fr;
+	margin: 50px 0 0 50px;
 
 	@media (max-width: 800px) {
 		display: flex;
-		flex-direction: column;
-		align-content: stretch;
-		margin: 125px 20px;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		margin: 20px;
+		margin-bottom: 70px;
 	}
 `;
 
 const Section1 = styled.div`
 	grid-row: top;
 	grid-column: left / span 2;
-	place-self: center;
+	align-self: center;
+	justify-self: left;
 	display: flex;
 	flex-direction: column;
-	padding-right: 30px;
+	padding-right: 20px;
 `;
 
 const Section2 = styled.div`
 	grid-row: top;
 	grid-column: right;
-	place-self: center;
+	align-self: center;
+	justify-self: left;
 	display: flex;
 	flex-direction: column;
+	padding-right: 20px;
 `;
 
 const Section3 = styled.div`
 	grid-row: bottom;
 	grid-column: left;
-	place-self: center;
+	align-self: center;
+	justify-self: left;
 	display: flex;
 	flex-direction: column;
+	padding-right: 20px;
 `;
 
 const Section4 = styled.div`
 	grid-row: bottom;
 	grid-column: right;
-	place-self: center;
+	align-self: center;
+	justify-self: left;
 	display: flex;
 	flex-direction: column;
+	padding-right: 20px;
 `;
 
 const Gear = styled.img`
 	grid-row: bottom;
 	grid-column: center;
-	place-self: center;
-	width: 150px;
-	margin: 10px;
+	align-self: center;
+	justify-self: left;
+	width: 50%;
 	object-fit: contain;
 
 	@media (max-width: 800px) {
@@ -69,30 +72,31 @@ const Gear = styled.img`
 const Divider = styled.div`
 	grid-row: center;
 	grid-column: left / span 3;
-	place-self: center;	
+	align-self: center;
+	justify-self: left;	
 	border-bottom: 2px solid #152238;
-	width: 90%;
+	width: 95%;
 
-	// @media (max-width: 800px) {
-	// 	margin: 125px 20px;
-	// }
+	@media (max-width: 800px) {
+		display: none;
+	}
 `;
 
 const Header = styled.h3`
-	font-size: 2rem;
 	color: #152238;
 	font-weight: bold;
-	padding: 10px 0;
+	margin: 0;
+	padding: 10px 0 10px 0;
 `;
 
 const Text = styled.p`
-	font-size: 1.5rem;	
-	margin: 5px 0;
+	margin: 0;
+	padding: 3px 0;
 `;
 
 const Item = styled.li`
-	font-size: 1.5rem;	
-	margin: 2px;
+	margin: 0;
+	padding: 2px 0;
 `;
 
 function Intro() {

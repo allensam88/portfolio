@@ -99,7 +99,7 @@ const Item = styled.li`
 	padding: 2px 0;
 `;
 
-function Intro() {
+const About = () => {
 	return (
 		<Container>
 			<Section1>
@@ -142,4 +142,4 @@ function Intro() {
 	)
 }
 
-export default Intro;
+export default About;

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 
-const Projects = styled.div`
+const ProjectList = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -67,9 +67,9 @@ const Anchor = styled.a`
 	}
 `;
 
-function ProjectList() {
+const Projects = () => {
 	return (
-		<Projects>
+		<ProjectList>
 			<Project>
 				<Header>Alpaca Vids!</Header>
 				<Text>For practice interviews & feedback.</Text>
@@ -112,8 +112,8 @@ function ProjectList() {
 					<Anchor href="http://github.com/allensam88/african-marketplace-server" target="_blank" rel="noopener noreferrer">Back-End</Anchor>
 				</Code>
 			</Project>
-		</Projects>
+		</ProjectList>
 	)
 }
 
-export default ProjectList;
+export default Projects;

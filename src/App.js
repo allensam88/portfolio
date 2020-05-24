@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route } from "react-router-dom";
 
-import About from "./pages/About";
-import Projects from "./pages/Projects";
+import Sider from "./components/Sider";
+import Header from "./components/Header";
+import About from "./components/About";
+import Projects from "./components/Projects";
 
-function App() {
+const App = () => {
+	const [title, setTitle] = useState('~ About ~"')
+
 	return (
-		<div>
-			<Route exact path="/" component={About} />
-			<Route path="/projects" component={Projects} />
+		<div className="grid">
+			<Sider setTitle={setTitle} />
+			<Header title={title} />
+			<div className="content">
+				<Route exact path="/" component={About} />
+				<Route path="/projects" component={Projects} />
+			</div>
 		</div>
 	)
 }

@@ -63,7 +63,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .link:hover {
-	/* border-bottom: 2px solid #E4E4E9; */
 	text-decoration: underline;
 	transform: scale(1.1);
 	transition: transform 0.3s;

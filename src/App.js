@@ -7,7 +7,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 
 const App = () => {
-	const [title, setTitle] = useState('~ About ~"')
+	const [title, setTitle] = useState("~ About ~")
 
 	return (
 		<div className="grid">

@@ -104,11 +104,11 @@ const About = () => {
 		<Container>
 			<Section1>
 				<Header>Brief Intro</Header>
-				<Text>I enjoy problem-solving, process-improvement, and learning new ideas & skills.</Text>
-				<Text>I'm passionate about travel and experiencing different cultures.</Text>
+				<Text>I enjoy problem-solving, learning new ideas & skills, and process-improvement.</Text>
+				<Text>I'm also passionate about travel and experiencing different cultures.</Text>
 				<Header>Background</Header>
-				<Text>I've served in the military, played piano in a band, worked hard in construction,</Text>
-				<Text>and led manufacturing & logistics workshops and projects.</Text>
+				<Text>Served in the military, worked hard in construction, led</Text>
+				<Text>manufacturing improvement projects, and played piano in a band.</Text>
 			</Section1>
 			<Section2>
 				<Header>Skills</Header>
@@ -117,7 +117,6 @@ const About = () => {
 				<Item>Jest Testing</Item>
 				<Item>ArcGIS</Item>
 				<Item>Process Improvement</Item>
-				<Item>Strategic Planning</Item>
 				<Item>Training Implementation</Item>
 			</Section2>
 			<Divider />
